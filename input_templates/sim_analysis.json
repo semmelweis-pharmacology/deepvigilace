@@ -1,0 +1,71 @@
+{
+  "oProjectName": "project_name",
+  "oSourceList": {
+    "oEmbeddingDict": "{{path_to_supplementary}}/embeddings/nsg_reaction2all_embedding.csv",
+    "oMeddraDictionary": "",
+    "oSmqDictionary": "",
+    "oPtFreqDictionary": "{{path_to_supplementary}}/frequencies/target_frequency_reaction2all.csv",
+    "oImeReactionsList": "{{path_to_supplementary}}/other/meddra_ime_list_from_ema.csv",
+    "oValidatedDictionary": [
+      "{{path_to_supplementary}}/validated_data/sider.csv",
+      "{{path_to_supplementary}}/validated_data/imi_protect.csv",
+      "{{path_to_supplementary}}/validated_data/bnf.csv"
+    ],
+    "oNormMinDictionary": "",
+    "oNormMaxDictionary": "",
+    "oCompDistMatrices": ""
+  },
+  "oParameterList": {
+    "oMetrics": {
+      "oCosine": true,
+      "oEuclidean": true,
+      "oDot": true,
+      "oManhattan": false,
+      "oBrayCurtis": true,
+      "oCanberra": true,
+      "oChebyshev": false,
+      "oCorrelation": false,
+      "oMinkowski": false,
+      "oSeuclidean": false,
+      "oSqeuclidean": false,
+      "oMahalanobis": false,
+      "oMeanMinPath": false,
+      "oPrimaryMinPath": false,
+      "oMeanPath": false,
+      "oPrimaryPath": false,
+      "oSmqMeanMinPath": false,
+      "oResnikMeddra": false,
+      "oResnikSmq": false,
+      "oJiangConrathMeddra": false,
+      "oJiangConrathSmq": false,
+      "oLinMeddra": false,
+      "oLinSmq": false
+    },
+    "oStatTests": {
+      "oNormality": false,
+      "oShapiro": false,
+      "oKolSir": true,
+      "oMeanAnova": false,
+      "oMeanWAnova": false,
+      "oMeanBrown": false,
+      "oMeanMWhitney": true,
+      "oVarFtest": false,
+      "oVarBartlett": false,
+      "oVarLevene": false,
+      "oVarBrown": true,
+      "oPermdispPair": true,
+      "oPermAnova": true
+    },
+    "oCalculateAll": true,
+    "oWriteOutAll": true,
+    "oSingleQuery": "",
+    "oCalculateSimsForValidated": true,
+    "oRandomSampleFromValidOnly": false,
+    "oNormalizeEmbeddings": false,
+    "oImeReactionsOnly": false,
+    "oFilterByFrequency": false,
+    "oFilterThreshold": 200,
+    "oStatPermNum": 999
+  },
+  "oOutputPath": "{{path_to_output_directory}}"
+}

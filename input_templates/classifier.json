@@ -1,0 +1,34 @@
+{
+  "oProjectName": "project_name",
+  "oSourceList": {
+    "oMainData": "{{path_to_supplementary}}/report_corpus/reports_for_classifier.csv",
+    "oReactionEmbedding": "{{path_to_supplementary}}/embeddings/nsg_reaction2all_embedding.csv",
+    "oDrugFeaturesChem": "{{path_to_supplementary}}/drug_features/drug_features_chem.csv",
+    "oDrugFeaturesBio": "{{path_to_supplementary}}/drug_features/drug_features_bio.csv",
+    "oReferenceDatasets": [
+      "{{path_to_supplementary}}/benchmark_data/omop.csv",
+      "{{path_to_supplementary}}/benchmark_data/eu_adr.csv",
+      "{{path_to_supplementary}}/benchmark_data/fda_rev.csv"
+    ],
+    "oPretrainedModel": ""
+  },
+  "oParameterList": {
+    "oCalculateRorPerformance": true,
+    "oNoEmbedding": false,
+    "oNegativeSampling": {
+      "Enabled": true,
+      "oByData": "reaction",
+      "oUseFreqSampling": true,
+      "oRepeatSampling": 6
+    },
+    "oStandardizeReactions": true,
+    "oStandardizeDrugs": true,
+    "oTrainTestSplit": 0,
+    "oOptimizer": "sgd",
+    "oLearningRate": 0.001,
+    "oEpochs": 50,
+    "oBatchSize": 512
+  },
+  "oOutputPath": "{{path_to_output_directory}}",
+  "oOutCsv": ""
+}

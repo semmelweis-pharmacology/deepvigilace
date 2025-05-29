@@ -1,0 +1,27 @@
+{
+   "oProjectName": "project_name",
+   "oSourceList": {
+     "oMainData": "{{path_to_supplementary}}/report_corpus/context_sampled_reports_reaction2all.csv",
+     "oContextFrequencyFile": "{{path_to_supplementary}}/frequencies/context_frequency_reaction2all.csv",
+     "oTargetFrequencyFile": "{{path_to_supplementary}}/frequencies/target_frequency_reaction2all.csv"
+   },
+   "oEmbeddingParams": {
+     "oEmbeddingMethod": "ntx",
+     "oNormalizeVectorLength": true,
+     "oNumberOfEmbeddedFeatures": 200,
+     "oEpochs": 1000,
+     "oOptimizer": "rmsprop",
+     "oLearningRate": 0.01,
+     "oEpochsPerOutput": 100,
+     "oNtXentExclusive": {
+       "oSampleByFrequency": false,
+       "oNumberOfPairsPerBatch": 16,
+       "oContrastiveTemperature": 0.3
+     },
+     "oNegativeSamplingExclusive": {
+       "oNumberOfNegativesPerPositive": 7,
+       "oNumberOfPositivesPerBatch": 8
+     }
+   },
+   "oOutputPath": "{{path_to_output_directory}}"
+}

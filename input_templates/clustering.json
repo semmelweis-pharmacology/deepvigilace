@@ -1,0 +1,21 @@
+{
+"oProjectName": "project_name",
+ "oSourceList": {
+     "oEmbedding": "{{path_to_supplementary}}/embeddings/nsg_reaction2all_embedding.csv"
+     },
+ "oParameterList": {
+     "oTSNE": {
+         "oDimensions": 2,
+         "oPerplexity": 30,
+         "oIterations": 3000,
+         "oMetric": "cosine",
+         "oRandomState": 42
+         },
+     "oHDBSCAN": {
+         "oMinClusterSize": 10,
+         "oMinSamples": null,
+         "oMetric": "euclidean"
+         }
+     },
+  "oOutputPath": "{{path_to_output_directory}}"
+ }

@@ -1,0 +1,23 @@
+{
+  "oProjectName": "project_name",
+  "oSourceList": {
+    "oReactionEmbedding": "{{path_to_supplementary}}/embeddings/nsg_reaction2all_embedding.csv",
+    "oDrugFeaturesChem": "{{path_to_supplementary}}/drug_features/drug_features_chem.csv",
+    "oDrugFeaturesBio": "{{path_to_supplementary}}/drug_features/drug_features_bio.csv",
+    "oReferenceDatasets": [
+      "{{path_to_supplementary}}/benchmark_data/omop.csv",
+      "{{path_to_supplementary}}/benchmark_data/eu_adr.csv",
+      "{{path_to_supplementary}}/benchmark_data/fda_rev.csv"
+    ],
+    "oPretrainedModel": "{{path_to_supplementary}}/classifier_results/best_model/model.h5",
+    "oStandardScaler": "{{path_to_supplementary}}/classifier_results/best_model/std_scaler.bin"
+  },
+  "oParameterList": {
+    "oDataIsLabeled": true,
+    "oNoEmbedding": false,
+    "oStandardizeReactions": true,
+    "oStandardizeDrugs": true
+  },
+  "oOutputPath": "{{path_to_output_directory}}",
+  "oOutCsv": ""
+}
