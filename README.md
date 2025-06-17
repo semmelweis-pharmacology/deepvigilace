@@ -1,5 +1,7 @@
 # DeepVigilace project
 
+![deepvigilace](./deepvigilace.png)
+
 DeepVigilace is a software framework for creating, analyzing and using adverse event vector representations, a.k.a. embeddings, for pharmacovigilance purposes. See our [paper](https://doi.org/10.1101/2025.06.04.657852) for an in-depth description of the project.
 
 ## Preliminaries
